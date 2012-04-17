@@ -17,7 +17,13 @@
 # Product-specific compile-time definitions.
 #
 
-# Prebuilt Kernel
+# Kernel source
+TARGET_KERNEL_SOURCE := kernel/samsung/aries
+
+# Build kernel from source
+TARGET_KERNEL_CONFIG := cyanogenmod_captivatemtd_defconfig
+
+# Prebuilt Kernel as fallback
 TARGET_PREBUILT_KERNEL := device/samsung/captivatemtd/kernel
 
 TARGET_OTA_ASSERT_DEVICE := captivate,captivatemtd,SGH-I896,SGH-I897
